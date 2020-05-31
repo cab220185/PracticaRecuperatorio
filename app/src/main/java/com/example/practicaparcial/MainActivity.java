@@ -59,7 +59,6 @@ class MainActivity extends AppCompatActivity implements MyOnItemClick {
     public void onItemClick(int position) {
 
         Intent intent = new Intent(this,ModificarProducto.class);
-        intent.putExtra("posicion",position) ;
         posicionactualizado = position;
         super.startActivity(intent);
 

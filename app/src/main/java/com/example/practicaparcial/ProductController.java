@@ -7,15 +7,6 @@ public class ProductController implements View.OnClickListener {
 
     Producto producto ;
     ProductView productView ;
-    Activity activitymodificarproducto ;
-
-    public Activity getActivitymodificarproducto() {
-        return activitymodificarproducto;
-    }
-
-    public void setActivitymodificarproducto(Activity activitymodificarproducto) {
-        this.activitymodificarproducto = activitymodificarproducto;
-    }
 
 
     public Producto getProducto() {
@@ -25,6 +16,7 @@ public class ProductController implements View.OnClickListener {
     public void setProducto(Producto producto) {
         this.producto = producto;
     }
+
 
     public ProductView getProductView() {
         return productView;
@@ -47,6 +39,6 @@ public class ProductController implements View.OnClickListener {
     productView.loadView();
     productView.CargarModelo ();
     MainActivity.productoactualizado = producto ;
-    activitymodificarproducto.finish();
+    productView.Finalizar();
     }
 }

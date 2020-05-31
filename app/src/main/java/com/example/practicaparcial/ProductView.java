@@ -9,7 +9,7 @@ public class ProductView {
     Activity activity;
     Producto producto ;
     ProductController productController ;
-    Integer posicion_a_actualizar ;
+
 
     Button btnmodificar ;
     EditText edtCantidad;
@@ -45,6 +45,13 @@ public class ProductView {
         producto.nombreProducto = edtNombreProducto.getText().toString();
 
         producto.precioUnitario = edtPrecioUnitario.getText().toString();
+
+    }
+
+
+    public void Finalizar(){
+
+        activity.finish();
 
     }
 }

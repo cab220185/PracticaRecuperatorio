@@ -23,8 +23,8 @@ public class ModificarProducto extends AppCompatActivity {
         ProductController productController = new ProductController(producto);
         ProductView productView = new ProductView(this, productController,producto) ;
         productController.setProductView(productView);
-        productController.setActivitymodificarproducto(this);
-        productView.posicion_a_actualizar =  (Integer)super.getIntent().getExtras().get("posicion");
+
+
 
 
     }
